@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="6.css">
+</head>
+<body>
+<div class="stu-form">
+    <h1>Student Registeration Form</h1>
+    <form>
+        <div class="mainDIv">
+            <label for="fName">Firstname</label>
+            <div><input type="text" id="fName" placeholder="Firstname" minlength="3" maxlength="10" required
+                        pattern="[A-Za-z]{3-10}"
+                        autocomplete="on">
+            </div>
+        </div>
+
+
+        <div class="mainDIv">
+            <label for="mName">Middlename</label>
+            <div><input type="text" id="mName" placeholder="Middlename" minlength="3" maxlength="10" required
+                        pattern="[A-Za-z]{3-10}"
+                        autocomplete="on">
+            </div>
+        </div>
+
+        <div class="mainDIv">
+            <label for="lName">Lastname</label>
+            <div><input type="text" id="lName" placeholder="Lastname" minlength="3" maxlength="15" required
+                        pattern="[A-Za-z]{3-15}"
+                        autocomplete="on">
+            </div>
+        </div>
+
+        <div class="mainDIv">
+            <label for="Course">Course:</label>
+            <select id="Course">
+                <option>course</option>
+                <option>a1</option>
+                <option>a2</option>
+                <option>a3</option>
+            </select>
+        </div>
+
+        <div class="mainDIv">
+            <label>Gender:</label>
+            <div>
+                <input type="radio" name="gender" class="gender">
+                <label>Male</label>
+                <input type="radio" name="gender" class="gender">
+                <label>Female</label>
+                <input type="radio" name="gender" class="gender">
+                <label>Other</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="phone">Phone:</label>
+            <div><input type="text" id="phone" placeholder="+91" pattern="[0-9]{11}" required autocomplete="on"></div>
+            <div class="mainDIv"><input type="text" placeholder="phone no" pattern="[0-9]{11}" required
+                                        autocomplete="on">
+            </div>
+        </div>
+        <div class="mainDIv">
+            <label for="address">Current Address:</label>
+            <div>
+                <textarea placeholder="Current Address" id="address" minlength="10" maxlength="100"
+                          required></textarea>
+
+            </div>
+        </div>
+
+        <div class="mainDIv">
+            <label for="email" class="font">Email</label>
+            <div><input type="email" placeholder="Enter Email" id="email" required>
+            </div>
+        </div>
+
+        <div class="mainDIv">
+            <label for="pass" class="font">Password</label>
+            <div>
+                <input type="password" placeholder="Enter Password" id="pass" required pattern="[0-9]{5-20}">
+
+            </div>
+        </div>
+
+        <div class="mainDIv">
+            <label for="repass" class="font">Re-type Password</label>
+            <div>
+                <input type="email" placeholder="Re-type Password" id="repass" required pattern="[0-9]{5-20}">
+
+            </div>
+        </div>
+        <div class="mainDIv">
+            <input type="submit" value="Register" onclick="return Validate();validateEmail()">
+        </div>
+    </form>
+</div>
+<script src="6.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="7.css">
+</head>
+<body>
+<div class="container">
+    <h1>مشاهده ویدیو معرفی محصولات</h1>
+    <div class="video-player">
+        <video class="video" controls>
+            <source
+                    src="https://res.cloudinary.com/ifeomaimoh/video/upload/v1650567487/speech_ofvfzq.mp4"
+                    type="video/mp4"
+            />
+            <source
+                    src="https://res.cloudinary.com/ifeomaimoh/video/upload/v1650567487/speech_ofvfzq.mp4"
+                    type="video/webm"
+            />
+            <p>Your browser doesn't support HTML5 video.</p>
+        </video>
+    </div>
+    <div class="search">
+        <div class="input">
+            <label for="laptopModel">laptop model:</label>
+            <select id="laptopModel">
+                <option value="nothing">Nothing Selected</option>
+                <option value="acer">Acer</option>
+                <option value="asus">Asus</option>
+                <option value="lenovo">Lenovo</option>
+            </select>
+        </div>
+
+        <div class="input">
+            <label for="processor">Processor:</label>
+            <select id="processor">
+                <option value="nothing">Nothing Selected</option>
+                <option value="celeron">intel celeron</option>
+                <option value="i3">intel core i3</option>
+                <option value="i7">intel core i7</option>
+            </select>
+        </div>
+
+        <div class="input">
+            <label for="ram">RAM:</label>
+            <select id="ram">
+                <option value="nothing">RAM</option>
+                <option value="2GB">2GB</option>
+                <option value="4GB">4GB</option>
+                <option value="12GB">12GB</option>
+            </select>
+
+        </div>
+
+        <div class="input">
+            <label for="hard">HARD DISK:</label>
+            <select id="hard">
+                <option value="nothing">Hard Disk</option>
+                <option value="16GB">16GB</option>
+                <option value="1TB">1TB</option>
+                <option value="1TB-2">1TB</option>
+            </select>
+        </div>
+
+        <div class="input">
+            <label for="display">Display:</label>
+            <select id="display">
+                <option value="nothing">Nothing Selected</option>
+                <option value="HD">11.6 HD</option>
+                <option value="FHD">15.6 FHD</option>
+                <option value="FHD-2">14.2FHD</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="main">
+        <table>
+            <thead>
+            <tr>
+                <th>Laptop model</th>
+                <th>Picture</th>
+                <th>Processor</th>
+                <th>RAM</th>
+                <th>Hard disk</th>
+                <th>Display</th>
+                <th>purchase</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Acer</td>
+                <td><img src="images/download.jfif" alt="laptop image"></td>
+                <td>intel celeron</td>
+                <td>2GB</td>
+                <td>16GB</td>
+                <td>11.6 HD</td>
+                <td>
+                    <button>BUY NOW</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Asus</td>
+                <td><img src="images/images.jfif" alt="laptop image"></td>
+                <td>intel core i3</td>
+                <td>4GB</td>
+                <td>1TB</td>
+                <td>15.6 FHD</td>
+                <td>
+                    <button>BUY NOW</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Lenovo</td>
+                <td><img src="images/images%20(1).jfif" alt="laptop image"></td>
+                <td>intel core i7</td>
+                <td>12GB</td>
+                <td>1TB</td>
+                <td>14.2FHD</td>
+                <td>
+                    <button>BUY NOW</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
+
+
+<script src="7.js">
+</script>
+</body>
+</html>
